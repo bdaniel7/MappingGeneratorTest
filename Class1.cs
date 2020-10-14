@@ -2,7 +2,7 @@
 
 namespace MappingGeneratorTest
 {
-	public class Class1
+	public class Class1: Persistent
 	{
 		public string TempFlagRd { get; set; }
 		public int? DocumentLegacyId { get; set; }
@@ -15,8 +15,10 @@ namespace MappingGeneratorTest
 		{
 			return new Class1
 			       {
-								
+
 			       };
 		}
 	}
+
+	public class Persistent { }
 }
